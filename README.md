@@ -13,7 +13,7 @@ flutter listview refresh and loading more with pager and page loading，empty，
           useLoadMore: true,
           pageSize:20,),
           
-    主要看分页数据获取处理pagerBuilder，该回调用来获取指定页数的数据，一般为请求接口数据，例如例子中的延迟模拟数据<br/>
+    主要看分页数据获取处理pagerBuilder，该回调用来获取指定页数的数据，一般为请求接口数据，例如例子中的延迟模拟数据
     
     Future<List<String>> pageBuilder(int page,List currentDatas) async {
       await Future.delayed(Duration(seconds: 0, milliseconds: 2000));
